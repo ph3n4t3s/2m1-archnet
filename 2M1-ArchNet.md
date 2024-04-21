@@ -3,7 +3,7 @@
 ## @showdialog
 
 ![Logo H@rmonia](https://github.com/ph3n4t3s/1m1-archsys/blob/master/img/Harmonia_v4.jpg?raw=true)
-![Atelier 1](https://github.com/ph3n4t3s/1m1-archsys/blob/master/img/Diapositive24.jpeg?raw=true)
+![Atelier 1](https://github.com/ph3n4t3s/1m1-archsys/blob/master/img/Diapositive14.jpeg?raw=true)
 
 ℹ️ **CONSIGNES IMPORTANTES**
 > - 🗂️ **Sauvegardez TOUS vos documents**  dans votre répertoire de travail de groupe sur **OneDrive**.
@@ -44,7 +44,7 @@ Pour visualiser et sauvarger les données sur le PC, il faut :
 > 2. Cliquer sur le bouton **Afficher les données Appareil** pour visualiser les données.
 > 3. Sauvegarder les données dans un fichier .csv 
 
-![Téléchargez le programme. Visualisez et sauvegardez les données sur le PC](https://github.com/ph3n4t3s/1m1-archsys/blob/master/img/Record1.gif?raw=true) 
+![Téléchargez le programme. Visualisez et sauvegardez les données sur le PC](https://github.com/ph3n4t3s/2m1-archnet/blob/master/img/Record1.gif?raw=true) 
 
 ## Étape 3/3 - Documenter
 > 1. Sauvegardez **TOUTES** les traces de votre expérimentation. (vos **notes**, les **données récoltées** et vos **copies d'écran**)
