@@ -43,7 +43,7 @@ basic.forever(function () {
 ```
 
 ### Chargement du code et test
-![Test1](https://github.com/ph3n4t3s/2m1-archnet/blob/master/img/Record3.gif)
+![Test1](https://github.com/ph3n4t3s/2m1-archnet/blob/master/img/Record4.gif?raw=true)
 
 ## Communication Bluetooth émetteur/récepteur @showhint
 Le programme sur l'émetteur envoit sur le port Série et via Bluetooth.
