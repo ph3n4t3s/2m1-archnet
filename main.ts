@@ -1,11 +1,11 @@
-input.onButtonPressed(Button.A, function () {
-    basic.showString("A")
-    serial.writeValue("touche", 1)
+radio.onReceivedValue(function (name, value) {
+    if (value == 1) {
+        basic.showString("A")
+    } else if (value == 2) {
+        basic.showString("B")
+    }
 })
-input.onButtonPressed(Button.B, function () {
-    basic.showString("B")
-    serial.writeValue("touche", 2)
-})
+radio.setGroup(10)
 basic.forever(function () {
     basic.showLeds(`
         . . . . .

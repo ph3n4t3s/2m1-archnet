@@ -2,8 +2,8 @@
 
 ## @showdialog
 
-![Logo H@rmonia](https://github.com/ph3n4t3s/1m1-archsys/blob/master/img/Harmonia_v4.jpg?raw=true)
-![Atelier 1](https://github.com/ph3n4t3s/1m1-archsys/blob/master/img/Diapositive14.jpeg?raw=true)
+![Logo H@rmonia](https://github.com/ph3n4t3s/2m1-archnet/blob/master/img/Harmonia_v4.jpg?raw=true)
+![Atelier 1](https://github.com/ph3n4t3s/2m1-archnet/blob/master/img/Diapositive14.jpeg?raw=true)
 
 ℹ️ **CONSIGNES IMPORTANTES**
 > - 🗂️ **Sauvegardez TOUS vos documents**  dans votre répertoire de travail de groupe sur **OneDrive**.
@@ -16,10 +16,10 @@
 
 ## @showdialog
 
-# Récolte de données via le port Série (**USB"")
+# Récolte de données via le port Série (**USB**)
 Le programme envoit les données (sous forme key/value) sur le port série (**USB**) afin de pouvoir les **visualiser** et les **sauvegarder** sur le PC.
-Si la touche A est pressée, le programme envoit la valeur 1.
-Si la touche B est pressée, le programme envoit la valeur 2.
+> - Si la touche **A** est pressée, le programme envoit la valeur **1**.
+> - Si la touche **B** est pressée, le programme envoit la valeur **2**.
 
 ```blocks
 input.onButtonPressed(Button.A, function () {
@@ -42,28 +42,60 @@ basic.forever(function () {
 })
 ```
 
+### Chargement du code et test
+
 ## Communication Bluetooth émetteur/récepteur @showhint
 Le programme sur l'émetteur envoit sur le port Série et via Bluetooth.
 
 ```blocks
-
+input.onButtonPressed(Button.A, function () {
+    basic.showString("A")
+    serial.writeValue("touche", 1)
+    radio.sendValue("touche", 1)
+})
+input.onButtonPressed(Button.B, function () {
+    basic.showString("B")
+    serial.writeValue("touche", 2)
+    radio.sendValue("touche", 2)
+})
+radio.setGroup(10)
+basic.forever(function () {
+    basic.showLeds(`
+        . . . . .
+        . . . . .
+        . . . . .
+        . . . . .
+        . . . . .
+        `)
+    basic.pause(1000)
+})
 ```
 
-Le récepteur reçoit la commande.
+## Le récepteur
 
 ```blocks
-
+radio.onReceivedValue(function (name, value) {
+    if (value == 1) {
+        basic.showString("A")
+    } else if (value == 2) {
+        basic.showString("B")
+    }
+})
+radio.setGroup(10)
+basic.forever(function () {
+    basic.showLeds(`
+        . . . . .
+        . . . . .
+        . . . . .
+        . . . . .
+        . . . . .
+        `)
+    basic.pause(1000)
+})
 ```
 
 ATTENTION : Fixer le numéro du groupe Bluetooth en accord avec votre numéro de groupe.
 
-## Transférer le programme. Visualiser et sauvegarder les données sur le PC @showhint
-Pour visualiser et sauvarger les données sur le PC, il faut :
-> 1. Transférer le programme sur le Micro:Bit.
-> 2. Cliquer sur le bouton **Afficher les données Appareil** pour visualiser les données.
-> 3. Sauvegarder les données dans un fichier .csv 
-
-![Téléchargez le programme. Visualisez et sauvegardez les données sur le PC](https://github.com/ph3n4t3s/2m1-archnet/blob/master/img/Record1.gif?raw=true) 
 
 ## Documenter
 > 1. Sauvegardez **TOUTES** les traces de votre expérimentation. (vos **notes**, les **données récoltées** et vos **copies d'écran**)
