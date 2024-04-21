@@ -43,7 +43,7 @@ basic.forever(function () {
 ```
 
 ### Chargement du code et test
-![Test1](https://github.com/ph3n4t3s/2m1-archnet/blob/master/img/Record4.gif?raw=true)
+![ChargementCode](https://github.com/ph3n4t3s/2m1-archnet/blob/master/img/Record4.gif?raw=true)
 
 ## Communication Bluetooth émetteur/récepteur @showhint
 Le programme sur l'émetteur envoit sur le port Série et via Bluetooth.
@@ -95,7 +95,10 @@ basic.forever(function () {
 })
 ```
 
-ATTENTION : Fixer le numéro du groupe Bluetooth en accord avec votre numéro de groupe.
+**ATTENTION** : Fixer le numéro du groupe Bluetooth en accord avec votre numéro de groupe de travail.
+
+## Communication Série et Bluetooth @showhint
+![CommunicationPointAPoint](https://github.com/ph3n4t3s/2m1-archnet/blob/master/img/Dia24.jpg?raw=true)
 
 
 ## Documenter
@@ -103,94 +106,3 @@ ATTENTION : Fixer le numéro du groupe Bluetooth en accord avec votre numéro de
 > 2. Mettez à jour le journal de bord du projet.
 
 
-___
-# OLD
-## Partie #1/3 - Comment une donnée est-elle transmise entre un émetteur et un récepteur ?
-
-### Thématiques
-1. Type de connexion (niveau physique) 
-2. Communication point à point 
-3. Communication multi-point
-4. Topologie réseau 
-
-
-### Communication point à point 
-Avant de parler de communication il est nécessaire de définir support par lequel l'information est transportée/transmise. 
-Il s'agit définir le __niveau physique__ de la connexion. 
-
-__Question__ 
-
-Citez des exemples de support/média que vous utilisez pour transporter des données ? (Type de réseau)
-
-- Bluetooth 
-- Wifi
-- Câble Ethernet 
-- Fibre Optiques
-- Micro-Ondes
-- Satellites 
-
-Prenons l'exemple d'une liaison Bluetooth pour illustrer ce qui est nécessaire pour assurer l'échange d'information entre un émetteur et un récepteur. 
-
-
-
-1. [Vidéo YouTube - Collecte de données avec le MicroBit](https://youtu.be/imzGdgKm4W0?si=FBLzMVgMT84QMNZi)
-
-2. [Vidéo YouTube - Collecte de données via Bluetooth](https://youtu.be/r5vyFl2HfFw?feature=shared)
-
-3. [Vidéo YouTube - Programmation émetteur-récepteur](https://youtu.be/y4XS6JIwdIQ?feature=shared)
-
-4. Protocole [ARP (Address Resolution Protocol)](wikipedia)
-
-### Communication multi-point
-
-__Question__
-Quels sont les problèmes qui peuvent apparaître lors de communications multiples? 
-
-
-### Topologie réseau
-
-__Question__
-Faites des recherches et expliquez ce qu'est la topologie d'un réseau.
-
----
-# ANNEXES
-## Index des ressources
-> - [Présentation du projet]()
-> - [Cahier des charges du projet]()
-> - [Guide à agir et penser]()
-> - [Guide des outils]()
-> - [Canevas pour les rapports d'atelier]()
-> - [Canevas pour le projet]()
-> - [Cavenas pour le journal de bord]()
-
-## Index des outils
-> - [OneDrive]() - Stockage
-> - [Word]() - Traitement de texte
-> - [Excel]() - Traitement de donnée
-> - [PowerPoint]() - Présentation - Illustration
-> - [Outlook]() - Messagerie
-> - [Whiteboard]() - Tableau blanc coopératif
-> - [Draw.io]() - Illustration
- 
-
-—-
-### Exemple de code block
-```blocks
-Exemple de code block
-```
-
-### Exemple de code Python
-```python
-function ping () {
-    radio.sendString(« PING » + « , » + « 0 » + « , » + («  » + control.deviceSerialNumber()))
-}
-function LedSwitch () {
-    if (LedStatus == 0) {
-        LedStatus = 255
-        strip.showColor(neopixel.colors(NeoPixelColors.White))
-    } else {
-        LedStatus = 0
-        strip.showColor(neopixel.colors(NeoPixelColors.Black))
-    }
-}
-```
