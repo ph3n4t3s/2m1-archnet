@@ -6,7 +6,7 @@ Ce tutoriel est mis à disposition, sauf exception, selon les termes de la Licen
 ## Architecture des systèmes informatiques
 * [Partie 1 ***** ](/2m1-archnet/2M1-ArchNet)    [Communication point à point](https://makecode.microbit.org/#tutorial:github:ph3n4t3s/2m1-archnet/2M1-ArchNet)
 * [Partie 2 ***** ](/2m2-archnet/1M2-ArchNet)    [Interconnexion de réseaux](https://makecode.microbit.org/#tutorial:github:ph3n4t3s/2m2-archnet/2M2-ArchNet)
-* [Partie 3 ***** ](/2m3-archnet/1M3-ArchNet)    [Sauvegarde fichier](https://makecode.microbit.org/#tutorial:github:ph3n4t3s/2m3-archnet/2M3-ArchNet)
+* [Partie 3 ***** ](/2m3-archnet/1M3-ArchNet)    [Acheminement des données](https://makecode.microbit.org/#tutorial:github:ph3n4t3s/2m3-archnet/2M3-ArchNet)
 
 
 > Ouvrir cette page à [https://ph3n4t3s.github.io/2m1-archnet/](https://ph3n4t3s.github.io/2m1-archnet/)
