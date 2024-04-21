@@ -98,7 +98,7 @@ basic.forever(function () {
 **ATTENTION** : Fixer le numéro du groupe Bluetooth en accord avec votre numéro de groupe de travail.
 
 ## Communication Série et Bluetooth @showhint
-![CommunicationPointAPoint](https://github.com/ph3n4t3s/2m1-archnet/blob/master/img/Dia24.jpg?raw=true)
+![CommunicationPointAPoint](https://github.com/ph3n4t3s/2m1-archnet/blob/master/img/Dia24.jpeg?raw=true)
 
 
 ## Documenter
