@@ -72,7 +72,7 @@ basic.forever(function () {
 })
 ```
 
-## Le récepteur
+## Le récepteur @showhint
 
 ```blocks
 radio.onReceivedValue(function (name, value) {
