@@ -64,10 +64,8 @@ basic.forever(function () {
 ![DémoCommunicationBluetooth](https://github.com/ph3n4t3s/2m1-archnet/blob/master/img/record4.gif?raw=true)
 
 ## Le récepteur @showhint
-- Si reçoit touche 1
-    Le programme affiche A.
-- Si reçoit touche 2
-    Le programme affiche B.
+- Si reçoit touche 1, le programme affiche A.
+- Si reçoit touche 2, le programme affiche B.
 
 ```blocks
 radio.onReceivedValue(function (name, value) {
@@ -90,9 +88,9 @@ basic.forever(function () {
 })
 ```
 
-**ATTENTION** : Fixer le numéro du groupe Bluetooth en accord avec votre numéro de groupe de travail.
-
 ![DémoCommunicationBluetooth](https://github.com/ph3n4t3s/2m1-archnet/blob/master/img/record5.gif?raw=true)
+
+**ATTENTION** : Fixer le numéro du groupe Bluetooth en accord avec votre numéro de groupe de travail.
 
 
 ## Communication Point à Point - Série et Bluetooth @showhint
