@@ -32,6 +32,7 @@ Téléchargez le code et testez en mettant votre doigt sur le microprocesseur po
 ![ChargementCode](https://github.com/ph3n4t3s/2m1-archnet/blob/master/img/Record1.gif?raw=true)
 
 ## Communication Bluetooth émetteur/récepteur @showhint
+Réalisez le programme suivant :
 - Si A est pressé
     Le programme sur l'émetteur affiche A et envoit touche 1 sur le port Série et via Bluetooth.
 - Si B est pressé
@@ -101,7 +102,7 @@ Réalisez le programme de l'émetteur et du récepteur pour que :
 Selon le diagramme de flux suivant :
 ![Diagramme de flux](https://github.com/ph3n4t3s/2m1-archnet/blob/master/img/Dia27.gif?raw=true)
 
-## Documenter
+## Documenter @showhint
 > 1. Sauvegardez les source de vos programmes.
 > 2. Mettez à jour le **journal de bord** du groupe.
 > 3. Sauvegardez **TOUTES** les traces de votre expérimentation. (vos **notes**, les **données récoltées** et vos **copies d'écran**)
