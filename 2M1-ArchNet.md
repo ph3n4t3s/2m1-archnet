@@ -94,9 +94,9 @@ basic.forever(function () {
 
 
 ## Communication Point à Point - Série et Bluetooth @showhint
-![Communication Point à Point](https://github.com/ph3n4t3s/2m1-archnet/blob/master/img/Dia26.gif ?raw=true)
+![Communication Point à Point](https://github.com/ph3n4t3s/2m1-archnet/blob/master/img/Dia26.gif?raw=true)
 
-![Diagramme de flux](https://github.com/ph3n4t3s/2m1-archnet/blob/master/img/Dia27.gif ?raw=true)
+![Diagramme de flux](https://github.com/ph3n4t3s/2m1-archnet/blob/master/img/Dia27.gif?raw=true)
 
 ## Documenter
 > 1. Sauvegardez **TOUTES** les traces de votre expérimentation. (vos **notes**, les **données récoltées** et vos **copies d'écran**)
