@@ -11,7 +11,8 @@
         "main.ts",
         "README.md",
         "img/index.md",
-        "2M1-ArchNet.md"
+        "2M1-ArchNet.md",
+        "tutorial-info-cache.json"
     ],
     "testFiles": [
         "test.ts"
