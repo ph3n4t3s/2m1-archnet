@@ -63,7 +63,7 @@ basic.forever(function () {
 ![DémoCommunicationBluetooth](https://github.com/ph3n4t3s/2m1-archnet/blob/master/img/record4.gif?raw=true)
 
 ## Le récepteur @showhint
-Réalisez le programme suivant pour le recepteur :
+Réalisez le programme suivant pour le récepteur :
 - Si reçoit touche 1, le programme affiche A.
 - Si reçoit touche 2, le programme affiche B.
 
