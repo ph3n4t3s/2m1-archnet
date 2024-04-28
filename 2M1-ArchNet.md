@@ -17,18 +17,18 @@
 > - 🆘 Si vous êtes **perdu** servez-vous des **guides** et des **ressources** qui sont à votre disposition dans le **répertoire du projet** sur **OneDrive**.
 
 ## Récolte de données via le port Série (**USB**) @showhint
-Le programme envoit toutes les 0.5 secondes la **température** et le **niveau de luminosité** (sous forme key/value) sur le port série (**USB**) afin de pouvoir les **visualiser** et les **sauvegarder** sur le PC.
+Pour que le programme envoit chaque seconde via le port série **USB** , il faut utiliser la **fonction** ``||Communication Série:série écrire valeur||`` qui se trouve dans la catégorie **Communication Série** et la déposer dans la boucle toujours ``||basic:toujours||``. Ceci va définir le nom et la valeur mesurée. Nous trouverons les variables prédéfinies pour la température ``||Entrée:température (° C)||`` et et pour la luminosité ``||Entrée:niveau d'intensité lumineuse||`` dans la catégorie **Entrée**.
 
 ```blocks
 basic.forever(function () {
     serial.writeValue("temperature", input.temperature())
     serial.writeValue("luminosite", input.lightLevel())
-    basic.pause(500)
+    basic.pause(1000)
 })
 ```
 
 ### Chargement du code et tests
-Téléchargez le code et testez en mettant votre doigt sur le microprocesseur pour faire monter la température, et utilisez la lampe de poche de votre smartphone pour illuminer la matrice de led pour faire monter la luminosité.
+Téléchargez le code et testez en mettant votre doigt sur le microprocesseur pour faire monter la température, et utilisez la lampe de poche de votre téléphone pour illuminer la matrice de led pour faire monter la luminosité.
 ![ChargementCode](https://github.com/ph3n4t3s/2m1-archnet/blob/master/img/Record1.gif?raw=true)
 
 ## Communication Bluetooth émetteur/récepteur @showhint
