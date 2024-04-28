@@ -97,9 +97,13 @@ basic.forever(function () {
 
 **ATTENTION** : Fixer le numéro du groupe Bluetooth en accord avec votre numéro de groupe de travail.
 
+![DémoCommunicationBluetooth]()
+
+
 ## Communication Série et Bluetooth @showhint
 ![CommunicationPointAPoint](https://github.com/ph3n4t3s/2m1-archnet/blob/master/img/Dia24.jpeg?raw=true)
 
+![DémoCommunicationPointAPoint]()
 
 ## Documenter
 > 1. Sauvegardez **TOUTES** les traces de votre expérimentation. (vos **notes**, les **données récoltées** et vos **copies d'écran**)

@@ -1,3 +1,11 @@
+input.onButtonPressed(Button.A, function () {
+    basic.showString("A")
+    radio.sendValue("Touche", 1)
+})
+input.onButtonPressed(Button.B, function () {
+    basic.showString("B")
+    radio.sendValue("Touche", 2)
+})
 radio.onReceivedValue(function (name, value) {
     if (value == 1) {
         basic.showString("A")
