@@ -32,11 +32,9 @@ Téléchargez le code et testez en mettant votre doigt sur le microprocesseur po
 ![ChargementCode](https://github.com/ph3n4t3s/2m1-archnet/blob/master/img/Record1.gif?raw=true)
 
 ## Communication Bluetooth émetteur/récepteur @showhint
-Réalisez le programme suivant :
-- Si A est pressé
-    Le programme sur l'émetteur affiche A et envoit touche 1 sur le port Série et via Bluetooth.
-- Si B est pressé
-    Le programme sur l'émetteur affiche B et envoit touche 2 sur le port Série et via Bluetooth.
+Réalisez le programme suivant pour l'émetteur :
+- Si le bouton A est pressé sur l'émetteur, le programme affiche A et envoit touche 1 sur le port Série et via Bluetooth.
+- Si le bouton B est pressé sur l'émetteur, le programme affiche B et envoit touche 2 sur le port Série et via Bluetooth.
 
 ```blocks
 input.onButtonPressed(Button.A, function () {
@@ -65,6 +63,7 @@ basic.forever(function () {
 ![DémoCommunicationBluetooth](https://github.com/ph3n4t3s/2m1-archnet/blob/master/img/record4.gif?raw=true)
 
 ## Le récepteur @showhint
+Réalisez le programme suivant pour le recepteur :
 - Si reçoit touche 1, le programme affiche A.
 - Si reçoit touche 2, le programme affiche B.
 
