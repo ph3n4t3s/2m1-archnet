@@ -16,8 +16,11 @@
 > - ⚠️ Mettez à jour le journal de bord tout au long de **CHAQUE séance**.⚠️
 > - 🆘 Si vous êtes **perdu** servez-vous des **guides** et des **ressources** qui sont à votre disposition dans le **répertoire du projet** sur **OneDrive**.
 
-## Récolte de données via le port Série (**USB**) @showhint
-Pour que le programme envoit chaque seconde via le port série **USB** , il faut utiliser la **fonction** ``||Communication Série:série écrire valeur||`` qui se trouve dans la catégorie **Communication Série** et la déposer dans la boucle toujours ``||basic:toujours||``. Ceci va définir le nom et la valeur mesurée. Nous trouverons les variables prédéfinies pour la température ``||Entrée:température (° C)||`` et et pour la luminosité ``||Entrée:niveau d'intensité lumineuse||`` dans la catégorie **Entrée**.
+## Récolte de données via le port Série (**USB**) @showdialog
+Pour écrire un programme qui envoit chaque seconde via le port série **USB** ,
+il faut utiliser la **fonction** ``||Communication Série:série écrire valeur||`` qui se trouve dans la catégorie **Communication Série** et la déposer dans la boucle toujours ``||basic:toujours||``. 
+Ceci va définir le nom et la valeur mesurée. 
+Les variables prédéfinies de la température ``||Entrée:température (° C)||`` et de la luminosité ``||Entrée:niveau d'intensité lumineuse||`` se trouvent dans la catégorie **Entrée**.
 
 ```blocks
 basic.forever(function () {
@@ -31,7 +34,7 @@ basic.forever(function () {
 Téléchargez le code et testez en mettant votre doigt sur le microprocesseur pour faire monter la température, et utilisez la lampe de poche de votre téléphone pour illuminer la matrice de led pour faire monter la luminosité.
 ![ChargementCode](https://github.com/ph3n4t3s/2m1-archnet/blob/master/img/Record1.gif?raw=true)
 
-## Communication Bluetooth émetteur/récepteur @showhint
+## Communication Bluetooth émetteur/récepteur 
 Réalisez le programme suivant pour l'émetteur :
 - Si le bouton A est pressé sur l'émetteur, le programme affiche A et envoit touche 1 sur le port Série et via Bluetooth.
 - Si le bouton B est pressé sur l'émetteur, le programme affiche B et envoit touche 2 sur le port Série et via Bluetooth.
