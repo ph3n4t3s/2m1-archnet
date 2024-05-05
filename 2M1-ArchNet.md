@@ -7,8 +7,8 @@
 
 ## @showdialog
 
-ℹ️ **CONSIGNES IMPORTANTES**
-> - 🗂️ **Sauvegardez TOUS vos documents**  dans votre répertoire de travail de groupe sur **OneDrive**.
+ℹ️ ### CONSIGNES IMPORTANTES
+> - 🗂️ __Sauvegardez TOUS vos documents__  dans votre répertoire de travail de groupe sur **OneDrive**.
 > - 📝 **Prenez des notes** (sous forme manuscrite ou numérique, peu importe comment, **mais prenez des notes !!!** 😂)
 > - 🛤️ **Organisez** et  **planifiez** votre travail de groupe. (Qui ? Fait quoi ? quand ?) 
 > - 🧑‍🧑‍🧒 **Communiquez** entre vous.
@@ -16,8 +16,8 @@
 > - ⚠️ Mettez à jour le journal de bord tout au long de **CHAQUE séance**.⚠️
 > - 🆘 Si vous êtes **perdu** servez-vous des **guides** et des **ressources** qui sont à votre disposition dans le **répertoire du projet** sur **OneDrive**.
 
-## Récolte de données via le port Série (**USB**) @showdialog
-Écrirez un programme qui envoit des données chaque seconde sur le port série **USB**.
+## Récolte de données via le port Série USB @showdialog
+Écrirez un programme qui envoit des données chaque seconde sur le port série USB.
 Pour envoyer ces données (température et luminosité), il faut utiliser la **fonction** ``||Communication Série:série écrire valeur||`` qui se trouve dans la catégorie **Communication Série** et la déposer dans la boucle toujours ``||basic:toujours||``. 
 Cette **fonction** va permettre de définir le nom et la valeur mesurée, afin de pouvoir les différenciées lorsqu'elle vont arriver par le port **USB** sur le PC. 
 
