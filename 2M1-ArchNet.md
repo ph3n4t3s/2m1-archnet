@@ -23,7 +23,7 @@ Cette **fonction** va permettre de définir le nom et la valeur mesurée, afin d
 
 Les variables prédéfinies de la température ``||Entrée:température (° C)||`` et de la luminosité ``||Entrée:niveau d'intensité lumineuse||`` se trouvent dans la catégorie **Entrée**.
 
-A la fin de la boucle, nous insérons une attende de 1 s (1000 ms) à l'aide de la **fonction** ``||basic:Pause (ms)||``
+A la fin de la boucle, nous insérons une attende de 1 s (1000 ms) à l'aide de la **fonction** ``||basic:pause (ms)||``
 
 ### Code du programme
 ```blocks
@@ -40,9 +40,10 @@ et utilisez la lampe de poche de votre téléphone pour illuminer la matrice de 
 ![ChargementCode](https://github.com/ph3n4t3s/2m1-archnet/blob/master/img/Record1.gif?raw=true)
 
 ## Communication Bluetooth émetteur/récepteur @showdialog
-Réalisez le programme suivant sur l'émetteur, qui lorsque :
-- Le bouton A est pressé (``||Entrée:lorsque le bouton A est pressé||``), le programme affiche A (``||basic:Afficher texte||``) et envoit touche 1 sur le port **USB** Série (``||Communication Série:série écrire valeur||``) **et** via Bluetooth (``||Radio:envoyer valeur||`` dans la catégorie **Radio**).
-- Le bouton B est pressé (``||Entrée:lorsque le bouton B est pressé||``), le programme affiche B (``||basic:Afficher texte||``) et envoit touche 2 sur le port **USB** Série (``||Communication Série:série écrire valeur||``) **et** via Bluetooth (``||Radio:envoyer valeur||`` dans la catégorie **Radio**).
+### Programmation de l'émetteur
+Réalisez le programme suivant pour l'émetteur, qui lorsque :
+- Le bouton A est pressé (``||Entrée:lorsque le bouton A est pressé||``), le programme affiche A (``||basic:Afficher texte "A"||``) et envoit touche 1 sur le port **USB** Série (``||Communication Série:série écrire valeur||``) **et** via Bluetooth (``||Radio:envoyer valeur||`` dans la catégorie **Radio**).
+- Le bouton B est pressé (``||Entrée:lorsque le bouton B est pressé||``), le programme affiche B (``||basic:Afficher texte "B"||``) et envoit touche 2 sur le port **USB** Série (``||Communication Série:série écrire valeur||``) **et** via Bluetooth (``||Radio:envoyer valeur||`` dans la catégorie **Radio**).
 
 ```blocks
 input.onButtonPressed(Button.A, function () {
@@ -70,10 +71,13 @@ basic.forever(function () {
 
 ![DémoCommunicationBluetooth](https://github.com/ph3n4t3s/2m1-archnet/blob/master/img/record4.gif?raw=true)
 
-## Le récepteur @showhint
+## Le récepteur @showdialog
 Réalisez le programme suivant pour le récepteur :
-- Si reçoit touche 1, le programme affiche A.
-- Si reçoit touche 2, le programme affiche B.
+- Si reçoit touche 1 (``||Radio:quand une données est reçue par radio||``), le programme affiche A (``||basic:Afficher texte "A"||``).
+- Si reçoit touche 2 (``||Radio:quand une données est reçue par radio||``), le programme affiche B (``||basic:Afficher texte "B"||``).
+
+Pour distinguer la valeur reçue il sera nécessaire d'utiliser une **condition** (``||Logique:si value == 1 alors||`` et ``||Logique:sinon si value == 2 alors||``).
+
 
 ```blocks
 radio.onReceivedValue(function (name, value) {
