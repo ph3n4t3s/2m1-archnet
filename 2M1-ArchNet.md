@@ -17,11 +17,15 @@
 > - 🆘 Si vous êtes **perdu** servez-vous des **guides** et des **ressources** qui sont à votre disposition dans le **répertoire du projet** sur **OneDrive**.
 
 ## Récolte de données via le port Série (**USB**) @showdialog
-Pour écrire un programme qui envoit chaque seconde via le port série **USB** ,
-il faut utiliser la **fonction** ``||Communication Série:série écrire valeur||`` qui se trouve dans la catégorie **Communication Série** et la déposer dans la boucle toujours ``||basic:toujours||``. 
-Ceci va définir le nom et la valeur mesurée. 
+Écrirez un programme qui envoit des données chaque seconde sur le port série **USB**.
+Pour envoyer ces données (température et luminosité), il faut utiliser la **fonction** ``||Communication Série:série écrire valeur||`` qui se trouve dans la catégorie **Communication Série** et la déposer dans la boucle toujours ``||basic:toujours||``. 
+Cette **fonction** va permettre de définir le nom et la valeur mesurée, afin de pouvoir les différenciées lorsqu'elle vont arriver par le port **USB** sur le PC. 
+
 Les variables prédéfinies de la température ``||Entrée:température (° C)||`` et de la luminosité ``||Entrée:niveau d'intensité lumineuse||`` se trouvent dans la catégorie **Entrée**.
 
+A la fin de la boucle, nous insérons une attende de 1 s (1000 ms) à l'aide de la **fonction** ``||basic:Pause (ms)||``
+
+### Code du programme
 ```blocks
 basic.forever(function () {
     serial.writeValue("temperature", input.temperature())
@@ -30,14 +34,15 @@ basic.forever(function () {
 })
 ```
 
-### Chargement du code et tests
-Téléchargez le code et testez en mettant votre doigt sur le microprocesseur pour faire monter la température, et utilisez la lampe de poche de votre téléphone pour illuminer la matrice de led pour faire monter la luminosité.
+### Chargement du code et tests du programme
+Téléchargez le code et testez en mettant votre doigt sur le microprocesseur pour faire monter la température, 
+et utilisez la lampe de poche de votre téléphone pour illuminer la matrice de led pour faire monter la luminosité.
 ![ChargementCode](https://github.com/ph3n4t3s/2m1-archnet/blob/master/img/Record1.gif?raw=true)
 
-## Communication Bluetooth émetteur/récepteur 
-Réalisez le programme suivant pour l'émetteur :
-- Si le bouton A est pressé sur l'émetteur, le programme affiche A et envoit touche 1 sur le port Série et via Bluetooth.
-- Si le bouton B est pressé sur l'émetteur, le programme affiche B et envoit touche 2 sur le port Série et via Bluetooth.
+## Communication Bluetooth émetteur/récepteur @showdialog
+Réalisez le programme suivant sur l'émetteur, qui lorsque :
+- Le bouton A est pressé (``||Entrée:lorsque le bouton A est pressé||``), le programme affiche A (``||basic:Afficher texte||``) et envoit touche 1 sur le port **USB** Série (``||Communication Série:série écrire valeur||``) **et** via Bluetooth (``||Radio:envoyer valeur||`` dans la catégorie **Radio**).
+- Le bouton B est pressé (``||Entrée:lorsque le bouton B est pressé||``), le programme affiche B (``||basic:Afficher texte||``) et envoit touche 2 sur le port **USB** Série (``||Communication Série:série écrire valeur||``) **et** via Bluetooth (``||Radio:envoyer valeur||`` dans la catégorie **Radio**).
 
 ```blocks
 input.onButtonPressed(Button.A, function () {
